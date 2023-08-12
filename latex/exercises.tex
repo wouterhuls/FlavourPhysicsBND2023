@@ -1,5 +1,5 @@
-\documentclass{article}
-
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=1in,bottom=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{hyperref}
 
@@ -18,6 +18,8 @@
 \newcommand{\Ks}{\ensuremath{K_\text{S}}}
 
 \begin{document}
+
+\centerline{\Large Exercises on Flavour Physics for the 2023 BND school}
 
 
 \begin{homeworkexercise}[Using the PDG (adapted from Grossman and Tanedo 2015)]  
@@ -44,7 +46,7 @@
   \item $K_L \to \pi^+ \pi^- \pi^0$
   \item $D^+ \to \mu^+ \nu_\mu$ (a charged-current leptonic decay)
   \item $B^0 \to \mu^+ \mu^-$ (a neutral current leptonic decay)
-  \item $B^- \to D^0 \mu^- \bar{nu}$ (a semi-leptonic decay)
+  \item $B^- \to D^0 \mu^- \bar{\nu_\mu}$ (a semi-leptonic decay)
   \item $B^0 \to D^\pm \pi^\mp$ (what is the correct charge assignment in the final state?
   \item $K^+ \to \pi^\pm \mu^\pm \nu$ (what is the correct charge assignment?!) 
   \end{enumexercise}
@@ -76,11 +78,14 @@
 \end{homeworkexercise}
 
 
+\begin{homeworkexercise}[Measuring $\Delta m_d$]
+  Measure the value of $\Delta m_d$ using an LHCb dataset with $B^0 \to \jpsi K^{*0}$ events. See ipython notebook: \nbexercise{mixingfrequency.ipynb}  
+\end{homeworkexercise}
 
 \begin{homeworkexercise}
   \begin{enumexercise}
-  \item What is the average distance a $B^s$ meson will travel if it has a momentum of $100 GeV$ (typical at the LHC)?
-  \item The SuperKEK collider at Belle-II has an electron beam with an energy of $E_- = 8$~GeV and a positron beam with an energy $E_- = 4$~GeV. Consider a $B$ meson with mass $m=5$~GeV produced at rest in the $e^+ e^-$ center-of-momentum frame. What is the momentum of the B in the lab frame? How far will it travel on average in the lab frame?
+  \item What is the average distance a $B^0$ meson will travel if it has a momentum of $100 GeV$ (typical at the LHC)?
+  \item The SuperKEK collider at Belle-II has an electron beam with an energy of $E_- = 8$~GeV and a positron beam with an energy $E_- = 4$~GeV. Consider a $B$ meson with mass $m=5$~GeV produced at rest in the $e^+ e^-$ center-of-momentum frame. What is the momentum of the $B^0$ in the lab frame? How far will it travel on average in the lab frame?
   \item A decay time is effectively meausured through the expression $\tau = L / p$ where $L$ is the distance between the secondary and primary vertex and $p$ is the B momentum. Argue why the decaytime resolution at the LHC experiments is better than at the $\Upsilon(4S)$ facilities.
   \end{enumexercise}
 \end{homeworkexercise}
@@ -116,7 +121,7 @@
 
 \begin{homeworkexercise}[Measuring $sin(2beta)$]
 
-  Measure the value of the asymmetry $S = \sin(2\beta)$ from the LHCb run-2 dataset. See ipython notebook.
+  Measure the value of the asymmetry $S = \sin(2\beta)$ from the LHCb run-2 dataset. See ipython notebook: \nbexercise{sin2beta.ipynb}
   
 \end{homeworkexercise}
 

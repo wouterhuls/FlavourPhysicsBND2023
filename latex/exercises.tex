@@ -1,0 +1,123 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+\newcommand{\nbexercise}[1]{\url{https://github.com/wouterhuls/FlavourPhysicsBND2023/blob/main/#1}}
+
+
+\newtheorem{homeworkexercise}{Exercise}
+\newenvironment{enumexercise}{
+  \renewcommand{\labelenumi}{\bfseries{(\alph{enumi})}}
+  \leavevmode\begin{enumerate}}{\end{enumerate}\vspace{5pt}}
+
+
+\newcommand{\Br}[1]{{\cal B}(#1)}
+\newcommand{\jpsi}{\ensuremath{\mathrm{J/}\psi}}
+\newcommand{\Ks}{\ensuremath{K_\text{S}}}
+
+\begin{document}
+
+
+\begin{homeworkexercise}[Using the PDG (adapted from Grossman and Tanedo 2015)]  
+  Using the PDG:
+  \begin{enumexercise}
+  \item What are the component quarks of the $D^+$ meson? What is its mass? 
+  \item What are the component quarks of the $\Lambda$ baryon? What is its spin?
+  \item What is $\Br{\tau \to \mu \nu \bar{\nu}}$?
+  \item What are the mass and width of the $B^+$ meson?
+  \item What is (approximately) the fraction of $B^0$ with a high-energy lepton $\mu^+$ or $e^+$ in the final state?
+  \item What are the mixing periods (in picoseconds) for the $B_s$, $B_d$ and $K^0$ mesons?
+  \end{enumexercise}
+\end{homeworkexercise}
+
+\begin{homeworkexercise}[(Almost) stable particles]
+  Draw the total width and lifetime versus the mass for all particle in the particle data table. See ipython notebook:
+  \nbexercise{particledatatable.ipynb}
+\end{homeworkexercise} 
+
+\begin{homeworkexercise}[Feynman diagrams for hadron decays]
+  Treating one of the quarks as a 'spectator quark', write down the leading order Feynman diagram for
+  \begin{enumexercise}
+  \item $K_S \to \pi^+ \pi^-$
+  \item $K_L \to \pi^+ \pi^- \pi^0$
+  \item $D^+ \to \mu^+ \nu_\mu$ (a charged-current leptonic decay)
+  \item $B^0 \to \mu^+ \mu^-$ (a neutral current leptonic decay)
+  \item $B^- \to D^0 \mu^- \bar{nu}$ (a semi-leptonic decay)
+  \item $B^0 \to D^\pm \pi^\mp$ (what is the correct charge assignment in the final state?
+  \item $K^+ \to \pi^\pm \mu^\pm \nu$ (what is the correct charge assignment?!) 
+  \end{enumexercise}
+  In every diagram, write the correct CKM matrix elements (including the eventual complex conjugate).
+\end{homeworkexercise}
+
+\begin{homeworkexercise}[Colour allowed vs colour suppressed]
+  The decays $D^0 \to K^0 \pi^0$ and $D^0 \to K^- \pi^+$ proceed through the same $c \to s \bar{d} u$ transition. Draw the Feynman diagrams for both decays. Look up the decay rates in the PDG. Can you explain why the second decay is more prominent than the first based on the number of 'quark colour' configurations?
+\end{homeworkexercise}
+
+\begin{homeworkexercise}[The SM value of $sin(2beta)$]
+  Starting from the current 'fit' of the CK matrix, compute the SM value of the CKM angle $\beta$.
+  See ipython notebook: \nbexercise{ckmmatrix.ipynb}
+\end{homeworkexercise}
+
+\begin{homeworkexercise}[Computing a CP asymmetry from two amplitudes]
+  Consider a process $ i \to f $ that proceeds via two different amplitudes:
+  \[
+    A_1(i \to f) = a_1 \qquad \text{and} \qquad
+    A_2(i \to f) = a_2 e^{i \phi_s + \phi_w}
+  \]
+  In this expression, are real positive numbers $a_1$ and $a_2$ representing the size of the amplitudes. The phase differences $\phi_s$ and $\phi_w$ represent the `CP-conserving' and a `CP-violating' phase differences, respectively.   Compute the $CP$ asymmetry in the yields
+  \[
+    A_{CP} \; = \;
+    \frac{ \Gamma(i\to f) - \Gamma( \bar{i} \to \bar{f} ) }
+    { \Gamma(i\to f) + \Gamma( \bar{i} \to \bar{f} ) }
+  \]
+  in terms of $a_1$, $a_2$, $\sin(\phi_s)$ and $\sin(\phi_w)$.
+\end{homeworkexercise}
+
+
+
+\begin{homeworkexercise}
+  \begin{enumexercise}
+  \item What is the average distance a $B^s$ meson will travel if it has a momentum of $100 GeV$ (typical at the LHC)?
+  \item The SuperKEK collider at Belle-II has an electron beam with an energy of $E_- = 8$~GeV and a positron beam with an energy $E_- = 4$~GeV. Consider a $B$ meson with mass $m=5$~GeV produced at rest in the $e^+ e^-$ center-of-momentum frame. What is the momentum of the B in the lab frame? How far will it travel on average in the lab frame?
+  \item A decay time is effectively meausured through the expression $\tau = L / p$ where $L$ is the distance between the secondary and primary vertex and $p$ is the B momentum. Argue why the decaytime resolution at the LHC experiments is better than at the $\Upsilon(4S)$ facilities.
+  \end{enumexercise}
+\end{homeworkexercise}
+  
+
+\begin{homeworkexercise}[Computing the asymmetry in $B_d \to \jpsi\Ks$]
+  \begin{enumexercise}
+  \item Write down the quark content of the $B^0_d$, the $K^0$ and the $\jpsi$. (Hint: use 'pdg live')
+    
+  \item Draw the leading order (``tree-level'') Feynman diagram for $B_d^0 \to \jpsi K^0$. Write down the amplitude including the CKM factors. Make sure to have the asterix for the complex conjugate in the right place!
+  \item Draw the two $\bar{b}{d} \to b\bar{d}$ mixing diagrams assuming the top-quark dominates in the internal loop. At every vertex write the correct CKM factor. 
+  \item Draw the two $\bar{s}{d} \to b\bar{s}$ mixing diagrams assuming the charm-quark dominates in the internal loop. At every vertex write the correct CKM factor.
+  \item Show that the phase difference between the direct decay $B^0_d \to \jpsi K^0$ and the decay via mixing $B^0_d \to \bar{B}^0_d \to \jpsi \bar{K}^0 \to  \jpsi K^0$ is given by
+    \[
+      \arg\left[ \left( V_{td} V_{tb}^* \right)^2 \left( V_{cb} V_{cs}^*\right)^2 \left(V_{cs} V_{cd}^*\right)^2 \right]
+    \]
+  \item Show that this is equal to $\pi + 2\beta$ with $\beta$ the CKM angle defined as (CHECK! This is still wrong.)
+    \[
+      \beta = \arg\left( - \frac{V_{cd} V_{cb}^*}{V_{td} V_{tb}^*} \right)
+    \]
+  \item Bonus: The weak amplitude corresponding to the $\bar{b}{d} \to b\bar{d}$  mixing diagram is given by
+    \[
+      {\cal M}( \bar{b}{d} \to b\bar{d} ) \; = \; \frac{G_F^2 m_W^2}{12\pi} 
+      \sum_{q,q'}
+      \left(V_{bq}^* V_{dq}\right) \left(V_{bq'}^* V_{dq'}\right)  
+      F( m_q/m_W, m_{q'}/m_W )
+    \]
+    where $q$ and $q'$ are the quarks in the internal loop. The function $F$ is a known kinematic function called the Inami-Lim function. For this exercise you can assume that it is approximately $F(x,y) \approx x y$. Compute the factor $ V_{bq}^* V_{dq} V_{bq'}^* V_{dq'} m_q m_{q'}$ for all values of the internal quarks and show that the top-loop dominates. Now do the same for $K^0 - \bar{K}^0$ mising, e.g. for ${\cal M}( \bar{s}{d} \to s\bar{d} )$, and show that the charm quark dominates.
+    \end{enumexercise}
+    
+\end{homeworkexercise}
+
+
+\begin{homeworkexercise}[Measuring $sin(2beta)$]
+
+  Measure the value of the asymmetry $S = \sin(2\beta)$ from the LHCb run-2 dataset. See ipython notebook.
+  
+\end{homeworkexercise}
+
+\end{document}
